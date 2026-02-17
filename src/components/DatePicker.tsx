@@ -35,8 +35,8 @@ export function DatePicker({ value, onChange, onToday }: DatePickerProps): JSX.E
           id="calendar-date"
           className="date-picker-input"
           type="date"
-          value={formatIsoDate(value, 'yyyy-MM-dd')}
-          onChange={(event) => handleInputChange(event.target.value, 'yyyy-MM-dd')}
+          value={formatIsoDate(value)}
+          onChange={(event) => handleInputChange(event.target.value)}
           onClick={openNativePicker}
         />
 

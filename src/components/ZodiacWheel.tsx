@@ -3,7 +3,6 @@ import { ZODIAC_ANIMALS } from '../lib/chineseZodiac';
 type ZodiacWheelProps = {
   activeAnimalIndex: number;
   activeAnimal: string;
-  zodiacYear: number;
   rotationDeg: number;
 };
 
@@ -43,7 +42,6 @@ function ringSlicePath(startAngle: number, endAngle: number): string {
 export function ZodiacWheel({
   activeAnimalIndex,
   activeAnimal,
-  zodiacYear,
   rotationDeg
 }: ZodiacWheelProps): JSX.Element {
   return (
